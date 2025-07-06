@@ -43,3 +43,10 @@ vagrant --pass-var '{"http_port_forward":"8081","foo":"bar"}' up --provision
 > [!NOTE]
 > Make sure that the --pass-var option is specified before the vagrant command to avoid an invalid option validation error.
 
+## Build
+
+```bash
+gem signin
+gem build vagrant-extra-vars.gemspec
+gem push vagrant-extra-vars-x.y.z.gem
+```
