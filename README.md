@@ -4,7 +4,7 @@ Vagrant plugin that provide way to use JSON-formatted variables passed via the `
 
 ## Features
 
-- Parses `--pass-var '{"key":"value"}'` from CLI.
+- Parses `--pass-var='{"key":"value"}'` from CLI.
 - Falls back to `ENV['VAGRANT_PASS_VARS']` if `--pass-var` is not provided.
 
 ## Installation
@@ -34,7 +34,7 @@ end
 
 Then run vagrant:
 ```bash
-vagrant --pass-var '{"http_port_forward":"8081","foo":"bar"}' up --provision
+vagrant --pass-var='{"http_port_forward":"8081","foo":"bar"}' up --provision
 ```
 > [!NOTE]
 > Make sure that the --pass-var option is specified before the vagrant command to avoid an invalid option validation error.
