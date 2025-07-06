@@ -9,19 +9,15 @@ A simple Ruby helper to extract extra JSON-formatted variables passed via the `-
 
 ## Installation
 
-Add this line to your Gemfile:
-
-```ruby
-gem 'vagrant-extra-vars', git: 'https://github.com/a1ndreay/vagrant-extra-vars'
-```
-
-Then run `bundle install`
+run `vagrant plugin install vagrant-extra-vars`
 
 ## Usage
+
+You may access variable with `VagrantExtraVars::Store.pass_vars['foo']}` where 'foo' - the `--pass-var` given key
+
+## Exmaple
 Paste content below to your Vagrantfile:
 ```Vagrantfile
-require 'vagrant-extra-vars'
-
 Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|   
     host_port = VagrantExtraVars::Store.pass_vars['http_port_forward'].to_s
