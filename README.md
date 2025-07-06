@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "playbook.yaml"
-    ansible.raw_arguments = ["--extra-vars", "foo=#{VagrantExtraVars::Store.pass_vars['bar']}"]
+    ansible.raw_arguments = ["--extra-vars", "foo=#{VagrantExtraVars::Store.pass_vars['foo']}"]
   end
 end
 ```
