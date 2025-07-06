@@ -40,4 +40,6 @@ Then run vagrant:
 ```bash
 vagrant --pass-var '{"http_port_forward":"8081","foo":"bar"}' up --provision
 ```
+> [!NOTE]
+> Make sure that the --pass-var option is specified before the vagrant command to avoid an invalid option validation error.
 
