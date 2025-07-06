@@ -15,7 +15,7 @@ run `vagrant plugin install vagrant-extra-vars`
 
 You may access variable with `VagrantExtraVars::Store.pass_vars['foo']}` where 'foo' - the `--pass-var` given key
 
-## Exmaple
+## Example
 Paste content below to your Vagrantfile:
 ```Vagrantfile
 Vagrant.configure("2") do |config|
