@@ -12,7 +12,7 @@ A simple Ruby helper to extract extra JSON-formatted variables passed via the `-
 Add this line to your Gemfile:
 
 ```ruby
-gem 'vagrant-extra-vars', git: 'https://github.com/your-username/vagrant-extra-vars'
+gem 'vagrant-extra-vars', git: 'https://github.com/a1ndreay/vagrant-extra-vars'
 ```
 
 Then run `bundle install`
