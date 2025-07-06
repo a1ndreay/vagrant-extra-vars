@@ -1,6 +1,6 @@
 # vagrant-extra-vars
 
-A simple Ruby helper to extract extra JSON-formatted variables passed via the `--pass-var` vagrant CLI flag or the `VAGRANT_PASS_VARS` environment variable to use in Vagrantfile.
+Vagrant plugin that provide way to use JSON-formatted variables passed via the `--pass-var` vagrant CLI flag or the `VAGRANT_PASS_VARS` environment variable in Vagrantfile.
 
 ## Features
 
